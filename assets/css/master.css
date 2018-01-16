@@ -1,0 +1,150 @@
+/*
+  ############################
+  Layout
+  ############################
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  ############################
+  Common Styles
+  ############################
+*/
+
+html {
+  font: 300 20px/30px Avenir, sans-serif;
+}
+
+body {
+  background: black url("../images/bg_body.gif") repeat;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+h3 {
+  padding-bottom: 24px;
+  color: #3e98b2;
+}
+
+.bullet {
+  margin: 0 2%;
+  font-size: 0.75em;
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+header img {
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+nav {
+  padding-bottom: 50px;
+}
+
+nav ul {
+  list-style: none;
+  font: normal 26px Avenir, sans-serif;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  width: 180px;
+}
+
+nav a {
+  color: #cacaca;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  font: 900 26px Avenir, sans-serif;
+  color: #6db9ff;
+}
+
+nav a.menu_active {
+  font: 900 26px Avenir, sans-serif;
+  color: #6db9ff;
+}
+
+main {
+  background: #fff;
+  color: #45494d;
+  padding: 55px 0;
+}
+
+article {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 50px 2%;
+}
+
+footer {
+  background: #e7e7e7;
+  padding: 80px 0;
+  color: #b2b2b2;
+}
+
+footer p {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+footer ul {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 25px 0 0 0;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 7%;
+}
+
+/*
+  ############################
+  Projects Page Styles
+  ############################
+*/
+
+.projects img {
+  margin-top: 70px;
+}
+
+.projects img:first-of-type {
+  margin-top: 40px;
+}
+
+/*
+  ############################
+  Team Page Styles
+  ############################
+*/
+
+.team ul {
+  padding: 86px 0;
+}
+
+.team ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
