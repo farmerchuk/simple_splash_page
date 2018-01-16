@@ -120,6 +120,34 @@ footer ul li {
   padding: 0 7%;
 }
 
+footer a.twitter {
+  display: block;
+  background: transparent url("../images/icons_social-media.png") 0 0 no-repeat;
+  width: 46px;
+  height: 46px;
+}
+
+footer a.facebook {
+  display: block;
+  background: transparent url("../images/icons_social-media.png") 0 -46px no-repeat;
+  width: 46px;
+  height: 46px;
+}
+
+footer a.email {
+  display: block;
+  background: transparent url("../images/icons_social-media.png") 0 -92px no-repeat;
+  width: 46px;
+  height: 46px;
+}
+
+footer a.instagram {
+  display: block;
+  background: transparent url("../images/icons_social-media.png") 0 -138px no-repeat;
+  width: 46px;
+  height: 46px;
+}
+
 /*
   ############################
   Projects Page Styles
