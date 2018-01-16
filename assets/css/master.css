@@ -19,11 +19,11 @@
 */
 
 html {
-  font: 300 20px/30px Avenir, sans-serif;
+  font: 300 20px/30px "Avenir", sans-serif;
 }
 
 body {
-  background: black url("../images/bg_body.gif") repeat;
+  background: #2f2840 url("../images/bg_body.gif") repeat;
 }
 
 h2 {
@@ -32,14 +32,18 @@ h2 {
   padding: 20px 0;
 }
 
+h2::before,
+h2::after {
+  display: inline-block;
+  content: "\2022";
+  padding: 0 25px;
+  font-size: 22px;
+  vertical-align: 5px;
+}
+
 h3 {
   padding-bottom: 24px;
   color: #3e98b2;
-}
-
-.bullet {
-  margin: 0 2%;
-  font-size: 0.75em;
 }
 
 header,
@@ -61,7 +65,7 @@ nav {
 
 nav ul {
   list-style: none;
-  font: normal 26px Avenir, sans-serif;
+  font: normal 26px "Avenir", sans-serif;
 }
 
 nav ul li {
@@ -77,12 +81,12 @@ nav a {
 }
 
 nav a:hover {
-  font: 900 26px Avenir, sans-serif;
+  font: 900 26px "Avenir", sans-serif;
   color: #6db9ff;
 }
 
-nav a.menu_active {
-  font: 900 26px Avenir, sans-serif;
+nav a.active {
+  font: 900 26px "Avenir", sans-serif;
   color: #6db9ff;
 }
 
