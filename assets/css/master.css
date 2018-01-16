@@ -1,6 +1,6 @@
 /*
   ############################
-  Layout
+  Common Styles
   ############################
 */
 
@@ -12,18 +12,18 @@
   padding: 0;
 }
 
-/*
-  ############################
-  Common Styles
-  ############################
-*/
-
 html {
   font: 300 20px/30px "Avenir", sans-serif;
 }
 
 body {
   background: #2f2840 url("../images/bg_body.gif") repeat;
+}
+
+.column {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 4%;
 }
 
 h2 {
@@ -46,12 +46,20 @@ h3 {
   color: #3e98b2;
 }
 
+p {
+  text-align: justify;
+}
+
 header,
 main,
 footer {
   margin: 0 auto;
   max-width: 100%;
   text-align: center;
+}
+
+header {
+  position: relative;
 }
 
 header img {
@@ -70,8 +78,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 10px;
-  width: 180px;
+  width: 160px;
 }
 
 nav a {
@@ -99,7 +106,7 @@ main {
 article {
   max-width: 820px;
   margin: 0 auto;
-  padding: 50px 2%;
+  padding: 50px 0;
 }
 
 footer {
@@ -111,6 +118,7 @@ footer {
 footer p {
   max-width: 550px;
   margin: 0 auto;
+  text-align: center;
 }
 
 footer ul {
@@ -158,12 +166,25 @@ footer a.instagram {
   ############################
 */
 
+.projects h2 {
+  margin-top: 50px;
+}
+
+.projects article {
+  margin-bottom: 70px;
+}
+
+.projects article:last-of-type {
+  margin-bottom: 0;
+}
+
 .projects img {
-  margin-top: 70px;
+  display: block;
+  max-width: 100%;
 }
 
 .projects img:first-of-type {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 /*
@@ -179,4 +200,82 @@ footer a.instagram {
 .team ul li {
   display: inline-block;
   margin: 0 30px;
+}
+
+/*
+  ############################
+  Responsive Styles
+  ############################
+*/
+
+@media (max-width: 870px) {
+  .team ul {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .team ul li {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    overflow: hidden;
+    padding: 25px 20px;
+  }
+
+  header img {
+    width: 150px;
+    float: left;
+    padding: 0;
+  }
+
+  nav {
+    padding: 0;
+    text-align: right;
+  }
+
+  main {
+    padding-top: 25px;
+  }
+
+  footer ul li {
+    display: inline-block;
+    padding: 0 4%;
+  }
+
+  h2 {
+    display: inline-block;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .projects h2 {
+    margin-top: 25px;
+  }
+
+  h2::before,
+  h2::after {
+    display: inline-block;
+    content: "\2022";
+    padding: 0 25px;
+    font-size: 22px;
+    vertical-align: 5px;
+  }
+
+  article {
+    padding: 25px 0;
+  }
+
+  .team ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 43px 0;
+  }
+
+  .team ul li {
+    margin: 0 20px;
+  }
 }
